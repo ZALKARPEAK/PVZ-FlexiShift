@@ -1,11 +1,11 @@
 CREATE TABLE PickupPoint (
-                             id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                             pickup_point_id_id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
                              name VARCHAR(255) NOT NULL,
                              address VARCHAR(255) NOT NULL,
                              manager_id BIGINT,
                              CONSTRAINT fk_manager
                                  FOREIGN KEY (manager_id)
-                                     REFERENCES Manager(id)
+                                     REFERENCES Manager(manager_id)
 );
 
 -- Вставка данных в таблицу PickupPoint

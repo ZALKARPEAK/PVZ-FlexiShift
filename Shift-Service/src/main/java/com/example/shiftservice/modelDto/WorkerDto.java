@@ -1,5 +1,7 @@
-package com.example.workerservice.ModelMigration;
+package com.example.shiftservice.modelDto;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

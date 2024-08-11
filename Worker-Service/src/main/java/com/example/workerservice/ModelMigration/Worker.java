@@ -6,8 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Entity
 @Table(name = "worker")
 @Data
@@ -17,7 +15,7 @@ import java.util.List;
 public class Worker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long worker_id;
 
     @Column(name = "name")
     private String name;
@@ -30,4 +28,7 @@ public class Worker {
 
     @Column(name = "phone_number")
     private String phoneNumber;
+
+    @Column(name = "pickup_point_id")
+    private Long pickup_point_id;
 }
