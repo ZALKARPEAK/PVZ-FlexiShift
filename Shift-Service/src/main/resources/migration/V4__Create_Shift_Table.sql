@@ -5,7 +5,7 @@ CREATE TABLE Shift (
                        is_confirmed BOOLEAN NOT NULL,
                        pickup_point_id BIGINT,
                        worker_id BIGINT,
-                       status VARCHAR(20) NOT NULL DEFAULT 'available', -- available, booked, completed, canceled
+                       status smallint,
                        CONSTRAINT fk_pickup_point FOREIGN KEY (pickup_point_id) REFERENCES PickupPoint(id),
                        CONSTRAINT fk_worker FOREIGN KEY (worker_id) REFERENCES Worker(id)
 );

@@ -27,7 +27,7 @@ public class Shift {
     @Column(name = "is_confirmed")
     private boolean isConfirmed;
 
-    @Column(name = "status", nullable = false, columnDefinition = "VARCHAR(20) DEFAULT 'available'")
+    @Column(name = "status")
     private ShiftStatus status;
 
     @Column(name = "pickup_point_id")

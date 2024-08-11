@@ -1,5 +1,5 @@
 CREATE TABLE FinancialTransaction (
-                                      id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+                                      fk_manager_transaction_id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
                                       amount DECIMAL(19, 2) NOT NULL,
                                       transaction_date TIMESTAMP NOT NULL,
                                       type VARCHAR(255) NOT NULL,
